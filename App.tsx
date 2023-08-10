@@ -5,14 +5,20 @@
  * @format
  */
 
+import "react-native-gesture-handler";
 import React from 'react';
 import {StyleSheet, Text, View,} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native'; 
 
 function App(): JSX.Element {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Template VW SDK</Text>
-    </View>
+     <NavigationContainer>
+        <View>
+          <Text>
+              HOME
+          </Text>
+        </View>
+     </NavigationContainer>
   );
 }
 
