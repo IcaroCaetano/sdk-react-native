@@ -20,8 +20,8 @@ const CustomDrawer = (props: any) => {
                 </View>
             </DrawerContentScrollView>
             <View style={{padding: 20, borderTopWidth: 1, borderTopColor: '#ccc'}}>
-                <Text style={{fontSize: 14}}>
-                    Política de privacidade e Termos de Uso         
+                <Text style={{fontSize: 10, textAlign: 'center'}}>
+                    Política de privacidade e Termos de Uso - VWVO         
                  </Text>
             </View>
         </View>
