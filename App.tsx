@@ -9,16 +9,11 @@ import "react-native-gesture-handler";
 import React from 'react';
 import {StyleSheet, Text, View,} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native'; 
+import RootNavigator from './src/navigations/RootNavigator';
 
 function App(): JSX.Element {
   return (
-     <NavigationContainer>
-        <View>
-          <Text>
-              HOME
-          </Text>
-        </View>
-     </NavigationContainer>
+    <RootNavigator/>
   );
 }
 

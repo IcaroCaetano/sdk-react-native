@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Home</Text>
@@ -20,3 +20,5 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   }
 });
+
+export default Home;
