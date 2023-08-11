@@ -9,12 +9,7 @@ const DrawerNav = createDrawerNavigator();
 const DrawerRoutes: React.FC = () => {
     return (
         <DrawerNav.Navigator 
-            screenOptions={{    title: '', 
-                              //  drawerLabelStyle: {marginLeft: -25, fontSize: 15}, 
-                              //  drawerActiveBackgroundColor: '#012257',
-                              //  drawerActiveTintColor: '#fff',
-                              //  drawerInactiveTintColor: '#333'
-                            }} 
+            screenOptions={{ title: '', }} 
             drawerContent={CustomDrawer}
             >
 

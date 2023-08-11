@@ -10,8 +10,8 @@ const CustomDrawer = (props: any) => {
                     <Image source={require('../assets/icon_profile.png')}
                             style={{height: 40, width:40, borderRadius: 40, marginBottom: 10,
                                 alignItems: 'center', flexDirection: 'row', display: 'flex',
-                                justifyContent: "space-between"}}></Image>
-                    <Text style={{fontSize: 22, fontWeight: "600", marginBottom: 5}}>
+                                justifyContent: "space-between", marginLeft: 10}}></Image>
+                    <Text style={{fontSize: 22, fontWeight: "600", marginBottom: 5, marginLeft: 10}}>
                         Olá, Visitante!
                     </Text>
               
@@ -19,6 +19,11 @@ const CustomDrawer = (props: any) => {
                     <DrawerItemList {...props}/>
                 </View>
             </DrawerContentScrollView>
+            <View style={{padding: 20, borderTopWidth: 1, borderTopColor: '#ccc'}}>
+                <Text style={{fontSize: 14}}>
+                    Política de privacidade e Termos de Uso         
+                 </Text>
+            </View>
         </View>
     )
 }
