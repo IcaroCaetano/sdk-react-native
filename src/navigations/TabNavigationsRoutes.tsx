@@ -14,6 +14,17 @@ const TabNavigationsRoutes: React.FC = () => {
                 tabBarStyle: { position: 'absolute' },
             }}
         >
+
+            <Tab.Screen
+                name="Inicio"
+                component={Home}
+                options={{
+                    tabBarIcon: ({ color, size }) => (
+                      <Icon name="home" color={color} size={size} />
+                    )
+                }}
+            />
+
             <Tab.Screen name="Mais" component={Home}
                 listeners={({ navigation }) => ({
                     tabPress: e => {
