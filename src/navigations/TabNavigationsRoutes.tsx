@@ -37,8 +37,7 @@ const TabNavigationsRoutes: React.FC = () => {
                     tabBarIcon: ({ color, size }) => (
                       <Icon name="align-justify" color={color} size={size} />
                     )
-                }
-                }
+                }}
             />
 
         </Tab.Navigator>
