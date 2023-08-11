@@ -1,5 +1,6 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from '../screens/Home';
+import Icon from "react-native-vector-icons/FontAwesome"
 
 const Tab = createBottomTabNavigator();
 
@@ -22,9 +23,9 @@ const TabNavigationsRoutes: React.FC = () => {
                 })
                 }
                 options={{
-                   // tabBarIcon: ({ color, size }) => (
-                      //<Icon name="align-justify" color={color} size={size} />
-                   // )
+                    tabBarIcon: ({ color, size }) => (
+                      <Icon name="align-justify" color={color} size={size} />
+                    )
                 }
                 }
             />
