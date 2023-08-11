@@ -1,5 +1,6 @@
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import Home from '../screens/Home';
+import TabNavigationsRoutes from './TabNavigationsRoutes';
 //import { Feather } from '@expo/vector-icons';
 
 
@@ -16,6 +17,24 @@ const DrawerRoutes: React.FC = () => {
                             }} 
             //drawerContent={CustomDrawer}
             >
+
+        <DrawerNav.Screen name="Home" component={TabNavigationsRoutes} 
+                options={{ drawerItemStyle: { display: 'none' } }} />
+            {
+             //   flows.map((flows) => {
+             //   return (
+              //      <Drawer.Screen key={flows.name} name={flows.name} component={GeneralTabNavigation} initialParams={{ screen: `${flows.link.address}` }}
+               //     options={{
+              //          drawerIcon: ({ color }) => (
+              //          <Icon name={flows.icon} size={20} color={color} />
+              //          ),
+              //          drawerItemStyle: { display: `${flows.navVisible ? "flex" : "none"}`, borderBottomWidth: 2, borderBottomColor: "#0000001A" },
+              //          drawerLabelStyle: { fontSize: 15, fontWeight: "600" }
+               //     }}
+               //     />
+               // )
+                //})
+            }
             <DrawerNav.Screen 
                 name="home"
                 component={Home}
